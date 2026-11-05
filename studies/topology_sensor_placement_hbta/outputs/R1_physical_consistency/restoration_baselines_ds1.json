@@ -1,0 +1,38 @@
+{
+  "state": "DS1",
+  "setting": "companion c and candidate i out; i restored; expected gain over tied candidates",
+  "mean_over_58_companions": {
+    "spring_model": 0.179684254258413,
+    "nearest_to_damage": 0.1763606148732863,
+    "degree": 0.002347320315745745,
+    "mean_coverage": 0.00020772746157042028,
+    "fixed_sensitivity": -0.0007270461154964672,
+    "modal_efi": 0.059617781470710465,
+    "random": 0.010229666396985403,
+    "best_possible": 0.2490652264229331
+  },
+  "AG05": {
+    "spring_model": 0.2228915662650603,
+    "nearest_to_damage": 0.2228915662650603,
+    "degree": 0.018072289156626536,
+    "mean_coverage": 0.048192771084337394,
+    "fixed_sensitivity": 0.030120481927710885,
+    "modal_efi": 0.06024096385542177,
+    "random": 0.026421475375184977,
+    "best_possible": 0.32530120481927716
+  },
+  "AG07": {
+    "spring_model": 0.22289156626506024,
+    "nearest_to_damage": 0.22289156626506024,
+    "degree": 0.006024096385542188,
+    "mean_coverage": 0.0,
+    "fixed_sensitivity": 0.006024096385542188,
+    "modal_efi": 0.09638554216867468,
+    "random": 0.015852885225110976,
+    "best_possible": 0.3132530120481928
+  },
+  "mean_tied_candidates": {
+    "spring_model": 1.8620689655172413,
+    "nearest_to_damage": 1.9655172413793103
+  }
+}

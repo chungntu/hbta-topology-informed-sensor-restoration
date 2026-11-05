@@ -1,0 +1,54 @@
+{
+  "AG05": {
+    "n_all": 57,
+    "rho_all": 0.5258357014394791,
+    "n_without_dominant": 54,
+    "rho_without_dominant": 0.4404516796235777,
+    "distinct_measured_values_without_dominant": 9,
+    "max_measured_gain_without_dominant": 0.10843373493975905,
+    "share_zero_gain_without_dominant": 0.5,
+    "top1_overlap": 1,
+    "top1_predicted_mean_gain": 0.32530120481927716,
+    "top3_overlap": 2,
+    "top3_predicted_mean_gain": 0.176706827309237,
+    "top5_overlap": 2,
+    "top5_predicted_mean_gain": 0.11807228915662656,
+    "random_mean_gain": 0.026421475375184977,
+    "top3_predicted": [
+      "AL14",
+      "AL18",
+      "AL17"
+    ],
+    "top3_measured": [
+      "AL14",
+      "AL15",
+      "AL18"
+    ]
+  },
+  "AG07": {
+    "n_all": 57,
+    "rho_all": 0.3829792101532612,
+    "n_without_dominant": 54,
+    "rho_without_dominant": 0.22504384400057328,
+    "distinct_measured_values_without_dominant": 5,
+    "max_measured_gain_without_dominant": 0.09638554216867468,
+    "share_zero_gain_without_dominant": 0.8518518518518519,
+    "top1_overlap": 1,
+    "top1_predicted_mean_gain": 0.3132530120481928,
+    "top3_overlap": 2,
+    "top3_predicted_mean_gain": 0.18072289156626506,
+    "top5_overlap": 4,
+    "top5_predicted_mean_gain": 0.12530120481927712,
+    "random_mean_gain": 0.015852885225110976,
+    "top3_predicted": [
+      "AL14",
+      "AL18",
+      "AL17"
+    ],
+    "top3_measured": [
+      "AL14",
+      "AL15",
+      "AL18"
+    ]
+  }
+}

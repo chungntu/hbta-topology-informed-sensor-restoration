@@ -1,0 +1,87 @@
+{
+  "paper_title": "Topology-Informed Sensor Restoration after Sensor Loss in Structural Health Monitoring",
+  "prepared_inputs": {
+    "edge_spectra_multicondition_10s.npz": "fc21e089bf3e6e12794720c51dc7f0e54b582dece743bc96a0346e55c84e1814",
+    "hbta_teacher_edge_state.npz": "74d83fee0553ef09a89cbdbcbB7491e021f7fc06078579d333fc2f07f40e14fe"
+  },
+  "graph": {
+    "sensor_count": 58,
+    "edge_count": 122,
+    "tail_count": 13,
+    "relation_counts": {
+      "truss_diagonal": 16,
+      "truss_chord": 14,
+      "deck_longitudinal": 36,
+      "deck_transverse": 30,
+      "deck_truss_interface": 18,
+      "lateral_bracing": 8
+    },
+    "sensor_family_counts": {
+      "AG-AG": 38,
+      "AG-AL": 18,
+      "AL-AL": 66
+    }
+  },
+  "q_md": {
+    "shape": [122, 122],
+    "sensitivity_array_sha256": "9ad1835c7c5447c790ffd586fd39a110da7167d62bb36d02edb78d744451cefd",
+    "reliability_array_sha256": "ca75d5c5d9cefa1f9b4e85d5b4c3140f7beb9e0a1db3903c0a3818a6b06d2658"
+  },
+  "restoration_cases": {
+    "deck_row_10": {
+      "outage_count": 10,
+      "initial_lower_tail_coverage": 0.0690694110478747,
+      "five_action_lower_tail_coverage": 0.231930037571408,
+      "priority_path": ["AL09", "AL29", "AL21", "AL13", "AL25", "AL17", "AL05", "AL33", "AL01", "AL37"]
+    },
+    "truss_wall_9": {
+      "outage_count": 9,
+      "initial_lower_tail_coverage": 0.0421168831592595,
+      "five_action_lower_tail_coverage": 0.301475609758901,
+      "priority_path": ["AG03", "AG02", "AG04", "AG06", "AG07", "AG08", "AG05", "AG01", "AG09"]
+    },
+    "central_cluster_10": {
+      "outage_count": 10,
+      "initial_lower_tail_coverage": 0.0454138863004766,
+      "five_action_lower_tail_coverage": 0.238992286917625,
+      "priority_path": ["AL21", "AL22", "AL23", "AL19", "AL20", "AL24", "AG05", "AG14", "AL17", "AL18"]
+    },
+    "distributed_10_seed_1": {
+      "outage_count": 10,
+      "initial_lower_tail_coverage": 0.11511263565794,
+      "five_action_lower_tail_coverage": 0.249872893178514,
+      "priority_path": ["AL32", "AL01", "AG08", "AL08", "AL28", "AL21", "AG02", "AG15", "AL36", "AL06"]
+    }
+  },
+  "physical_consistency": {
+    "damage_state": "DS1",
+    "candidate_location": "AL14--AL18",
+    "link_spearman_rho": 0.42968425409395233,
+    "link_kendall_tau_b": 0.32886503953359225,
+    "top_10_percent_count": 13,
+    "top_10_percent_overlap": 6,
+    "AG05_spearman_rho": 0.5258357014394791,
+    "AG05_kendall_tau_b": 0.4401470332325359,
+    "AG07_spearman_rho": 0.3829792101532612,
+    "AG07_kendall_tau_b": 0.31712256622872476,
+    "selected_actions": {
+      "AG05/AL14": [0.6278950087726116, 0.32530120481927716],
+      "AG05/AG12": [0.0003886360391334165, 0.012048192771084376],
+      "AG05/AL37": [0.0000011803383301867143, 0.0],
+      "AG07/AL14": [0.6278950087726116, 0.3132530120481928],
+      "AG07/AL15": [0.08788172714412212, 0.2168674698795181],
+      "AG07/AG04": [0.0004996868083253503, 0.0],
+      "AG07/AL37": [0.0000011803383301867143, 0.0]
+    }
+  },
+  "figure_png_sha256": {
+    "fig_hbta_bridge_photo.jpg": "5746320bbccb5501c806ddbd9b033686865fdb3af5ed30b3039d7dd511cf1e45",
+    "fig_hbta_sensor_topology_wide.png": "6907ab4d5cf73d10330ed5ebdcf8421224288c07deae7a71dc8499cb6d24c73d",
+    "fig1_topology_coverage_concept.png": "380f1539918927b5e7a58ab2cc4cd65ce920704067d55af3bae56c7287d4c85a",
+    "fig3_observed_outage_situations.png": "d469a6abb5eb9c27c414a1279f6a3fce6002e6a77d5452fa05e83c7b7154cf8d",
+    "fig6_combined_restoration_sequences.png": "46d6482415db0b6a23af66e77d075cd8bf8dd6905b48b3fff019d48067c79c40",
+    "fig6_ds1_damage_location.png": "2049115c87a091b5c4c9673dc79f5b2a09f5ca7173a19b007e20898e3477694e",
+    "fig7_link_level_consistency.png": "503acff1076860aa7dde63bcf88bb01e0aed29c8fa37b698f4158574575b9671",
+    "fig8_restoration_consistency.png": "560fcd6384314ca542deb7244d60c81a258fcfece4a076984d5fa0fe10d6ac44"
+  }
+}

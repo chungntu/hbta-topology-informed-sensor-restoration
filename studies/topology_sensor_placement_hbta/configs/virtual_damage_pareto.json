@@ -1,0 +1,47 @@
+{
+  "experiment": "hbta_healthy_graph_virtual_damage_observability_pareto_v1",
+  "prepared_spectra": "../../data/derived/hbta/edge_spectra_multicondition_10s.npz",
+  "teacher_state": "../../data/derived/hbta/hbta_teacher_edge_state.npz",
+  "source_repo": "../../src",
+  "output_dir": "outputs/virtual_damage_pareto",
+  "rolling_blocks": 6,
+  "fit_recording_ids": [
+    0,
+    1,
+    2
+  ],
+  "healthy_selection_recording_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "calibration_recording_id": 4,
+  "healthy_test_recording_id": 5,
+  "damage_start_recording_id": 6,
+  "top_frequency_count": 8,
+  "kernel_length_m": 3.5,
+  "topology_weight": 0.05,
+  "damage_weight_reductions": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "resolvent_alpha_factors": [
+    0.01,
+    0.03,
+    0.1
+  ],
+  "observability_fractions": [
+    0.02,
+    0.05,
+    0.08,
+    0.1,
+    0.12,
+    0.15
+  ],
+  "primary_observability_fraction": 0.1,
+  "require_two_fold_node_coverage": true,
+  "require_selected_degree_two": true,
+  "solver_time_limit_seconds": 30
+}

@@ -1,0 +1,164 @@
+{
+  "status": "APPROVED 2026-11-05 and committed before any link-level or restoration result for DS2-DS8 was computed (pre-registration). Do not edit after results are seen; any later change must be a new, separately justified commit.",
+  "date": "2026-11-05",
+  "source": {
+    "locations": "Svendsen et al. (2023), Structural Health Monitoring 22(1):540-561, Figure 3(b) (schematic of damage locations), read at 400 dpi",
+    "descriptions": "Same paper, Table 1",
+    "sensor_coordinates": "data/derived/hbta/edge_spectra_multicondition_10s.npz (origin at midspan; x east, y north)"
+  },
+  "reading_conventions": [
+    "Figure 3(b) is an oblique view with west on the left and the south lower chord at the front, as in Figure 3(a).",
+    "Floor beams are at x = -17.5, -14, ..., 17.5 m (10 panels of 3.5 m); AL sensors are at panel midpoints.",
+    "Stringer cross beams are drawn at panel midpoints, between the two stringers.",
+    "Positions read from the schematic are uncertain by about one panel; the alternatives below cover this."
+  ],
+  "rule": "A damage state is represented by weakening all springs whose structural path passes through the damaged connection or member, using the relation type that represents that member type.",
+  "states": [
+    {
+      "state": "DS1",
+      "description": "Stringer-to-floor-beam connection, single connection",
+      "location": "floor beam x = -3.5 m, south stringer",
+      "springs": [
+        "AL14--AL18"
+      ],
+      "alternatives": {
+        "both_south_rows": [
+          "AL13--AL17",
+          "AL14--AL18"
+        ]
+      },
+      "confidence": "high (unchanged from the submitted manuscript)"
+    },
+    {
+      "state": "DS2",
+      "description": "Stringer-to-floor-beam connections, multiple connections",
+      "location": "floor beam x = -3.5 m, both stringers (Figure 3(b) shows DS2 at the same floor beam as DS1)",
+      "springs": [
+        "AL14--AL18",
+        "AL15--AL19"
+      ],
+      "alternatives": {
+        "both_rows_both_stringers": [
+          "AL13--AL17",
+          "AL14--AL18",
+          "AL15--AL19",
+          "AL16--AL20"
+        ]
+      },
+      "confidence": "medium (which connections beyond DS1 is not stated explicitly)"
+    },
+    {
+      "state": "DS3",
+      "description": "Stringer cross beam, main part of a single cross beam removed",
+      "location": "cross beam at panel midpoint x = -8.75 m",
+      "springs": [
+        "AL10--AL11"
+      ],
+      "alternatives": {
+        "one_panel_west": [
+          "AL06--AL07"
+        ],
+        "one_panel_east": [
+          "AL14--AL15"
+        ]
+      },
+      "confidence": "medium (panel read from schematic)"
+    },
+    {
+      "state": "DS4",
+      "description": "Stringer cross beams, main parts of multiple cross beams removed",
+      "location": "cross beams at x = -8.75 and -5.25 m (DS3 cross beam plus the next one east)",
+      "springs": [
+        "AL10--AL11",
+        "AL14--AL15"
+      ],
+      "alternatives": {
+        "shifted_west": [
+          "AL06--AL07",
+          "AL10--AL11"
+        ]
+      },
+      "confidence": "medium"
+    },
+    {
+      "state": "DS5",
+      "description": "Lateral bracing connection, single connection",
+      "location": "south lower chord at x = -10.5 m (joint instrumented by AG11)",
+      "springs": [
+        "AG01--AG11",
+        "AG03--AG11"
+      ],
+      "alternatives": {
+        "one_diagonal_only_a": [
+          "AG01--AG11"
+        ],
+        "one_diagonal_only_b": [
+          "AG03--AG11"
+        ]
+      },
+      "confidence": "medium (joint read from schematic; which diagonal is detached is not resolvable)",
+      "usable_for_detection_validation": false,
+      "note": "Nominal TPR 0.01: not detectable with the vertical channels; report as a measurement limitation."
+    },
+    {
+      "state": "DS6",
+      "description": "Lateral bracing connection, single connection",
+      "location": "north lower chord at x = 0 m (joint instrumented by AG05)",
+      "springs": [
+        "AG05--AG13",
+        "AG05--AG15"
+      ],
+      "alternatives": {
+        "one_diagonal_only_a": [
+          "AG05--AG13"
+        ],
+        "one_diagonal_only_b": [
+          "AG05--AG15"
+        ]
+      },
+      "confidence": "medium",
+      "usable_for_detection_validation": false,
+      "note": "Nominal TPR 0.19: weakly detectable; report as a measurement limitation."
+    },
+    {
+      "state": "DS7",
+      "description": "Lateral bracing connections, multiple connections",
+      "location": "DS5 and DS6 connections together (Figure 3(b) points DS7 to both)",
+      "springs": [
+        "AG01--AG11",
+        "AG03--AG11",
+        "AG05--AG13",
+        "AG05--AG15"
+      ],
+      "alternatives": {},
+      "confidence": "medium"
+    },
+    {
+      "state": "DS8",
+      "description": "Connection between floor beam and main load-carrying member, single connection",
+      "location": "floor beam x = +3.5 m, south lower chord (joint instrumented by AG15)",
+      "springs": [
+        "AG15--AL21",
+        "AG15--AL25"
+      ],
+      "alternatives": {
+        "one_panel_west": [
+          "AG13--AL13",
+          "AG13--AL17"
+        ]
+      },
+      "confidence": "medium"
+    }
+  ],
+  "folders_checked_without_new_location_information": [
+    "TL1_hbta_topology_edge_transfer_one_class_detection/submission_structures (Table 1 text only)",
+    "SHM_Submission_Package (submitted exclusion table only)",
+    "E:/09 VERY BIG DATA/05_Bridge_Hell_Railway_Truss/DOCS (landing pages, drawings as scans; h5 attributes have state labels but no locations)"
+  ],
+  "decision_stringer_rows": "Each stringer is represented by its inner-row path (y = -0.55 south, +0.55 north), as in the submitted DS1 analysis, so that the DS1 results reported to the reviewers are unchanged. The outer-row path (y = -0.95 / +0.95) of the same stringer is reported as a sensitivity case for DS1 and DS2.",
+  "evaluation_plan": {
+    "link_level": "Spearman between q of the damaged spring set and measured link response R, per state; bootstrap CI; compared with graph-distance and Euclidean-distance baselines. DS5 and DS6 reported but flagged as not detectable.",
+    "location_agnostic_restoration": "Lower-tail restoration choices compared with baselines on measured TPR averaged over, and minimum across, the detectable states (DS1-DS4, DS7, DS8), using the stored single- and pair-outage detector results; larger outages re-run with the same detector and threshold.",
+    "sensitivity": "Every alternative set listed above is evaluated and reported, whatever the outcome."
+  }
+}

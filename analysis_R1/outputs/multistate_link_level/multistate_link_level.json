@@ -1,0 +1,328 @@
+[
+  {
+    "state": "DS1",
+    "variant": "primary",
+    "springs": [
+      "AL14--AL18"
+    ],
+    "detectable": true,
+    "rho_model": 0.42968425409395233,
+    "rho_model_ci95": [
+      0.25747268163696996,
+      0.5757700499747974
+    ],
+    "rho_topology_only": 0.36714248151322876,
+    "rho_graph_distance": 0.4533154079244494,
+    "rho_euclidean": 0.40383950008829383,
+    "location_rank_among_122": 3,
+    "median_R": 0.0,
+    "max_R": 2.833778142929077
+  },
+  {
+    "state": "DS1",
+    "variant": "both_south_rows",
+    "springs": [
+      "AL13--AL17",
+      "AL14--AL18"
+    ],
+    "detectable": true,
+    "rho_model": 0.4268418091764575,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.3876543944150389,
+    "rho_graph_distance": 0.40016159610516083,
+    "rho_euclidean": 0.4022524855875148,
+    "location_rank_among_122": 4,
+    "median_R": 0.0,
+    "max_R": 2.833778142929077
+  },
+  {
+    "state": "DS2",
+    "variant": "primary",
+    "springs": [
+      "AL14--AL18",
+      "AL15--AL19"
+    ],
+    "detectable": true,
+    "rho_model": 0.5650811197971124,
+    "rho_model_ci95": [
+      0.42753614467985396,
+      0.6722182862369012
+    ],
+    "rho_topology_only": 0.4897245139583147,
+    "rho_graph_distance": 0.5713889637428183,
+    "rho_euclidean": 0.44153988079423995,
+    "location_rank_among_122": 3,
+    "median_R": 0.0,
+    "max_R": 6.577493190765381
+  },
+  {
+    "state": "DS2",
+    "variant": "both_rows_both_stringers",
+    "springs": [
+      "AL13--AL17",
+      "AL14--AL18",
+      "AL15--AL19",
+      "AL16--AL20"
+    ],
+    "detectable": true,
+    "rho_model": 0.5697198241884398,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.5341537159130781,
+    "rho_graph_distance": 0.5263723192809125,
+    "rho_euclidean": 0.431447687469123,
+    "location_rank_among_122": 3,
+    "median_R": 0.0,
+    "max_R": 6.577493190765381
+  },
+  {
+    "state": "DS3",
+    "variant": "primary",
+    "springs": [
+      "AL10--AL11"
+    ],
+    "detectable": true,
+    "rho_model": 0.2302260617233338,
+    "rho_model_ci95": [
+      0.038394360174886615,
+      0.4175614974834269
+    ],
+    "rho_topology_only": 0.23507258999557928,
+    "rho_graph_distance": 0.22645509573711123,
+    "rho_euclidean": 0.18133482938325818,
+    "location_rank_among_122": 7,
+    "median_R": 0.0,
+    "max_R": 1.0080269575119019
+  },
+  {
+    "state": "DS3",
+    "variant": "one_panel_west",
+    "springs": [
+      "AL06--AL07"
+    ],
+    "detectable": true,
+    "rho_model": 0.1914857731287122,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.16940891864311272,
+    "rho_graph_distance": 0.20499557533900498,
+    "rho_euclidean": 0.16611448253365133,
+    "location_rank_among_122": 14,
+    "median_R": 0.0,
+    "max_R": 1.0080269575119019
+  },
+  {
+    "state": "DS3",
+    "variant": "one_panel_east",
+    "springs": [
+      "AL14--AL15"
+    ],
+    "detectable": true,
+    "rho_model": 0.24849435939532347,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.24702523056156211,
+    "rho_graph_distance": 0.21126913947779793,
+    "rho_euclidean": 0.16115120585612544,
+    "location_rank_among_122": 4,
+    "median_R": 0.0,
+    "max_R": 1.0080269575119019
+  },
+  {
+    "state": "DS4",
+    "variant": "primary",
+    "springs": [
+      "AL10--AL11",
+      "AL14--AL15"
+    ],
+    "detectable": true,
+    "rho_model": 0.23756096876251012,
+    "rho_model_ci95": [
+      0.031437348526915286,
+      0.41657562978227825
+    ],
+    "rho_topology_only": 0.23119188952818312,
+    "rho_graph_distance": 0.2671716587904413,
+    "rho_euclidean": 0.20826699210468774,
+    "location_rank_among_122": 8,
+    "median_R": 0.0,
+    "max_R": 1.0179017782211304
+  },
+  {
+    "state": "DS4",
+    "variant": "shifted_west",
+    "springs": [
+      "AL06--AL07",
+      "AL10--AL11"
+    ],
+    "detectable": true,
+    "rho_model": 0.21604095486999444,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.17431698682470928,
+    "rho_graph_distance": 0.2343657439039597,
+    "rho_euclidean": 0.18537087634556337,
+    "location_rank_among_122": 12,
+    "median_R": 0.0,
+    "max_R": 1.0179017782211304
+  },
+  {
+    "state": "DS5",
+    "variant": "primary",
+    "springs": [
+      "AG01--AG11",
+      "AG03--AG11"
+    ],
+    "detectable": false,
+    "rho_model": -0.01740167119362044,
+    "rho_model_ci95": [
+      -0.18695077501356108,
+      0.15675050396743426
+    ],
+    "rho_topology_only": -0.06919688576846547,
+    "rho_graph_distance": 0.024292478169572918,
+    "rho_euclidean": 0.18832644436121093,
+    "location_rank_among_122": 65,
+    "median_R": 0.0,
+    "max_R": 0.8565620183944702
+  },
+  {
+    "state": "DS5",
+    "variant": "one_diagonal_only_a",
+    "springs": [
+      "AG01--AG11"
+    ],
+    "detectable": false,
+    "rho_model": -0.07720697767987705,
+    "rho_model_ci95": null,
+    "rho_topology_only": -0.07157963462818916,
+    "rho_graph_distance": 0.02385964900881941,
+    "rho_euclidean": 0.16011922052552058,
+    "location_rank_among_122": 79,
+    "median_R": 0.0,
+    "max_R": 0.8565620183944702
+  },
+  {
+    "state": "DS5",
+    "variant": "one_diagonal_only_b",
+    "springs": [
+      "AG03--AG11"
+    ],
+    "detectable": false,
+    "rho_model": 0.057519726463011005,
+    "rho_model_ci95": null,
+    "rho_topology_only": -0.003620595341814207,
+    "rho_graph_distance": 0.03406679510847371,
+    "rho_euclidean": 0.23470799107741716,
+    "location_rank_among_122": 56,
+    "median_R": 0.0,
+    "max_R": 0.8565620183944702
+  },
+  {
+    "state": "DS6",
+    "variant": "primary",
+    "springs": [
+      "AG05--AG13",
+      "AG05--AG15"
+    ],
+    "detectable": false,
+    "rho_model": -0.03875972338605495,
+    "rho_model_ci95": [
+      -0.205884664728737,
+      0.13280084408011703
+    ],
+    "rho_topology_only": -0.08866950418453666,
+    "rho_graph_distance": -0.09252431734670052,
+    "rho_euclidean": 0.18321149455403757,
+    "location_rank_among_122": 80,
+    "median_R": 0.0,
+    "max_R": 0.882352888584137
+  },
+  {
+    "state": "DS6",
+    "variant": "one_diagonal_only_a",
+    "springs": [
+      "AG05--AG13"
+    ],
+    "detectable": false,
+    "rho_model": 0.06750655307028683,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.0007901615489121331,
+    "rho_graph_distance": -0.0512849963680848,
+    "rho_euclidean": 0.23107937260519373,
+    "location_rank_among_122": 50,
+    "median_R": 0.0,
+    "max_R": 0.882352888584137
+  },
+  {
+    "state": "DS6",
+    "variant": "one_diagonal_only_b",
+    "springs": [
+      "AG05--AG15"
+    ],
+    "detectable": false,
+    "rho_model": -0.15317427951874463,
+    "rho_model_ci95": null,
+    "rho_topology_only": -0.2134397754318049,
+    "rho_graph_distance": -0.19978570010705538,
+    "rho_euclidean": 0.08721041487687643,
+    "location_rank_among_122": 107,
+    "median_R": 0.0,
+    "max_R": 0.882352888584137
+  },
+  {
+    "state": "DS7",
+    "variant": "primary",
+    "springs": [
+      "AG01--AG11",
+      "AG03--AG11",
+      "AG05--AG13",
+      "AG05--AG15"
+    ],
+    "detectable": true,
+    "rho_model": -0.0403665604934258,
+    "rho_model_ci95": [
+      -0.20620174299217814,
+      0.12228951520204294
+    ],
+    "rho_topology_only": -0.07219357632232376,
+    "rho_graph_distance": -0.06335748150905372,
+    "rho_euclidean": 0.24798117411240303,
+    "location_rank_among_122": 71,
+    "median_R": 0.0,
+    "max_R": 1.0597772598266602
+  },
+  {
+    "state": "DS8",
+    "variant": "primary",
+    "springs": [
+      "AG15--AL21",
+      "AG15--AL25"
+    ],
+    "detectable": true,
+    "rho_model": 0.38672636695758966,
+    "rho_model_ci95": [
+      0.20811393775438727,
+      0.5443482767959417
+    ],
+    "rho_topology_only": 0.31410368020657936,
+    "rho_graph_distance": 0.17042838496642904,
+    "rho_euclidean": 0.4794959122658204,
+    "location_rank_among_122": 20,
+    "median_R": 0.0,
+    "max_R": 4.0417985916137695
+  },
+  {
+    "state": "DS8",
+    "variant": "one_panel_west",
+    "springs": [
+      "AG13--AL13",
+      "AG13--AL17"
+    ],
+    "detectable": true,
+    "rho_model": 0.3709165257205605,
+    "rho_model_ci95": null,
+    "rho_topology_only": 0.3058291592919701,
+    "rho_graph_distance": 0.07277689470514316,
+    "rho_euclidean": 0.37395800311328586,
+    "location_rank_among_122": 21,
+    "median_R": 0.0,
+    "max_R": 4.0417985916137695
+  }
+]

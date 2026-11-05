@@ -1,0 +1,47 @@
+# Local safety archive and machine-specific configuration
+un_use/
+config_local.json
+.env
+.env.*
+!.env.example
+
+# Raw HBTA data must remain external
+data/raw/
+*.h5
+*.hdf5
+
+# Python environments and caches
+.venv/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# LaTeX transient products
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+/paper/outage_conditioned_prioritization/paper_topology_coverage_restoration_restructured.pdf
+
+# Temporary/QA/editor/OS artifacts
+tmp/
+temp/
+qa/
+qa_render*/
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

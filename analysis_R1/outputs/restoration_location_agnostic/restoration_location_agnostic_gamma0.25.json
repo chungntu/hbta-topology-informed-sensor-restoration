@@ -1,0 +1,126 @@
+{
+  "location_agnostic": {
+    "lower_tail": {
+      "mean_gain_of_choice": 0.01926260048403796,
+      "worst_state_gain_of_choice": -0.014424693849288782,
+      "share_of_oracle": 0.30601207391013974,
+      "top3_hit_rate": 0.034482758620689655,
+      "mean_spearman_over_candidates": 0.1403255031579184
+    },
+    "mean_coverage": {
+      "mean_gain_of_choice": 0.021892578524277735,
+      "worst_state_gain_of_choice": -0.0053465091894672225,
+      "share_of_oracle": 0.34779277922554114,
+      "top3_hit_rate": 0.0,
+      "mean_spearman_over_candidates": 0.17225703970448036
+    },
+    "lower_tail_topology": {
+      "mean_gain_of_choice": 0.0033850508767417813,
+      "worst_state_gain_of_choice": -0.026650938730290622,
+      "share_of_oracle": 0.053776043371790046,
+      "top3_hit_rate": 0.017241379310344827,
+      "mean_spearman_over_candidates": 0.22766846305541577
+    },
+    "link_count": {
+      "mean_gain_of_choice": 0.021166768881766804,
+      "worst_state_gain_of_choice": -0.007223475181514227,
+      "share_of_oracle": 0.3362623259955737,
+      "top3_hit_rate": 0.0,
+      "mean_spearman_over_candidates": 0.25890759373616856
+    },
+    "degree": {
+      "mean_gain_of_choice": 0.021855072177049743,
+      "worst_state_gain_of_choice": -0.005991948087918169,
+      "share_of_oracle": 0.34719694092688863,
+      "top3_hit_rate": 0.017241379310344827,
+      "mean_spearman_over_candidates": 0.27031554041472455
+    },
+    "random": {
+      "mean_gain_of_choice": 0.002238464415666876,
+      "worst_state_gain_of_choice": -0.022777307484193092,
+      "share_of_oracle": 0.0355609897417483,
+      "top3_hit_rate": 0.05263157894736842,
+      "mean_spearman_over_candidates": 0.0
+    },
+    "oracle": {
+      "mean_gain_of_choice": 0.062947191063103
+    }
+  },
+  "per_state": {
+    "DS1": {
+      "lower_tail": 0.000623182384711259,
+      "mean_coverage": 0.002700457000415458,
+      "lower_tail_topology": 0.0016618196925633603,
+      "link_count": 0.0024927295388450376,
+      "degree": 0.002700457000415458,
+      "nearest_to_damage": 0.11404237640216038,
+      "damage_coverage": 0.24532613211466556,
+      "random": 0.010229666396985406,
+      "oracle": 0.2490652264229331
+    },
+    "DS2": {
+      "lower_tail": -0.00020772746157042028,
+      "mean_coverage": 0.0,
+      "lower_tail_topology": -0.00020772746157042028,
+      "link_count": 0.0,
+      "degree": 0.0,
+      "nearest_to_damage": 0.00020772746157042028,
+      "damage_coverage": 0.00020772746157042028,
+      "random": 0.0001494179986734602,
+      "oracle": 0.010178645616950593
+    },
+    "DS3": {
+      "lower_tail": 0.013341543513957306,
+      "mean_coverage": 0.02914614121510674,
+      "lower_tail_topology": -0.010262725779967168,
+      "link_count": 0.02853037766830871,
+      "degree": 0.030582922824302142,
+      "nearest_to_damage": 0.024425287356321837,
+      "damage_coverage": 0.024425287356321837,
+      "random": -0.00753680177455132,
+      "oracle": 0.0494663382594417
+    },
+    "DS4": {
+      "lower_tail": 0.0,
+      "mean_coverage": 0.0,
+      "lower_tail_topology": 0.0,
+      "link_count": 0.0,
+      "degree": 0.0,
+      "nearest_to_damage": 0.0,
+      "damage_coverage": 0.0,
+      "random": -7.2019128280471035e-06,
+      "oracle": 0.0
+    },
+    "DS7": {
+      "lower_tail": 0.10448691316992108,
+      "mean_coverage": 0.10012463647694227,
+      "lower_tail_topology": 0.03219775654341505,
+      "link_count": 0.09659326963024513,
+      "degree": 0.0984628167843789,
+      "nearest_to_damage": 0.10240963855421689,
+      "damage_coverage": 0.05006231823847112,
+      "random": 0.011333901850596583,
+      "oracle": 0.16140423764021608
+    },
+    "DS8": {
+      "lower_tail": -0.002668308702791452,
+      "mean_coverage": -0.0006157635467980274,
+      "lower_tail_topology": -0.0030788177339901367,
+      "link_count": -0.0006157635467980274,
+      "degree": -0.0006157635467980274,
+      "nearest_to_damage": 0.0,
+      "damage_coverage": 0.0,
+      "random": -0.0007381960648748282,
+      "oracle": 0.0006157635467980274
+    }
+  },
+  "detectable_states": [
+    "DS1",
+    "DS2",
+    "DS3",
+    "DS4",
+    "DS7",
+    "DS8"
+  ],
+  "tail_count": 31
+}

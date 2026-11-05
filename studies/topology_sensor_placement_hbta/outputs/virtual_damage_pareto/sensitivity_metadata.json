@@ -1,0 +1,98 @@
+{
+  "experiment": "healthy_graph_virtual_damage_response_weights",
+  "config": "configs/virtual_damage_pareto.json",
+  "config_sha256": "e81952f3fa3d7c648721834d6be8be18f3b9e1e099ddc822bba1ff7a7941a362",
+  "prepared_spectra_sha256": "fc21e089bf3e6e12794720c51dc7f0e54b582dece743bc96a0346e55c84e1814",
+  "selection_recording_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "physical_damage_data_used": false,
+  "candidate_damage_location_count": 122,
+  "measurement_link_count": 122,
+  "graph": {
+    "edge_count": 122,
+    "edge_attribute_columns": [
+      "dx",
+      "dy",
+      "dz",
+      "length",
+      "unit_dx",
+      "unit_dy",
+      "unit_dz",
+      "structural_path_length",
+      "parallel_path_count",
+      "relation_truss_diagonal",
+      "relation_truss_chord",
+      "relation_deck_longitudinal",
+      "relation_deck_transverse",
+      "relation_deck_truss_interface",
+      "relation_lateral_bracing"
+    ],
+    "relation_counts": {
+      "truss_diagonal": 16,
+      "truss_chord": 14,
+      "deck_longitudinal": 36,
+      "deck_transverse": 30,
+      "deck_truss_interface": 18,
+      "lateral_bracing": 8
+    },
+    "sensor_family_counts": {
+      "AG-AG": 38,
+      "AG-AL": 18,
+      "AL-AL": 66
+    },
+    "length_min": 0.3999999761581421,
+    "length_median": 3.5,
+    "length_max": 7.102112329598594,
+    "structural_path_length_min": 3.113121437180038,
+    "structural_path_length_median": 3.899999976158142,
+    "structural_path_length_max": 7.104847528041508,
+    "two_path_edge_count": 30,
+    "weight_mean": 0.9999999999999999,
+    "drawing_source": "Sensor layout.pdf and Drawings.pdf in the external HBTA raw-data directory"
+  },
+  "healthy_reliability_audit": {
+    "coherence_median": 1.3695535926672164e-05,
+    "variability_median": 0.48286545276641846,
+    "raw_reliability_quantiles": [
+      2.6440561669005547e-06,
+      5.697062783838192e-06,
+      2.7792571017926093e-05,
+      5.487561065820044e-05,
+      8.424142288276926e-05
+    ],
+    "normalized_reliability_quantiles": [
+      0.19948998708708132,
+      0.19972676924787308,
+      0.973192650994021,
+      1.9184511352777904,
+      1.9215401474345115
+    ]
+  },
+  "sensitivity_audit": {
+    "surrogate_warning": "Graph edge weights are coordinate/drawing-informed transfer proxies, not verified member stiffnesses.",
+    "laplacian_positive_eigenvalue_median": 2.6014420178939686,
+    "resolvent_alphas": [
+      0.026014420178939686,
+      0.07804326053681905,
+      0.26014420178939685
+    ],
+    "damage_weight_reductions": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "sensitivity_min": 1.3930466928987415e-10,
+    "sensitivity_max": 0.741401449398268,
+    "effective_weight_quantiles": [
+      0.24570234765955032,
+      0.2880497855705839,
+      0.6873943395594738,
+      2.5842485023512167,
+      3.193248147571997
+    ]
+  }
+}

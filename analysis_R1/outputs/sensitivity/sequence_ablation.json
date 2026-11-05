@@ -1,0 +1,247 @@
+{
+  "deck_row_10": {
+    "spring_model": {
+      "sequence": [
+        "AL09",
+        "AL29",
+        "AL21",
+        "AL13",
+        "AL25",
+        "AL17",
+        "AL05",
+        "AL33",
+        "AL01",
+        "AL37"
+      ],
+      "steps": 10,
+      "exact": 0,
+      "near": 2,
+      "tie_break_used": 0
+    },
+    "uniform_springs": {
+      "sequence": [
+        "AL05",
+        "AL21",
+        "AL29",
+        "AL13",
+        "AL37",
+        "AL01",
+        "AL17",
+        "AL33",
+        "AL09",
+        "AL25"
+      ],
+      "steps": 10,
+      "exact": 1,
+      "near": 4,
+      "tie_break_used": 1,
+      "first3_set_overlap_with_model": 2,
+      "first5_set_overlap_with_model": 3,
+      "same_position_all_steps": 2
+    },
+    "link_count": {
+      "sequence": [
+        "AL05",
+        "AL09",
+        "AL13",
+        "AL17",
+        "AL21",
+        "AL25",
+        "AL29",
+        "AL33",
+        "AL01",
+        "AL37"
+      ],
+      "steps": 10,
+      "exact": 2,
+      "near": 0,
+      "tie_break_used": 2,
+      "first3_set_overlap_with_model": 1,
+      "first5_set_overlap_with_model": 3,
+      "same_position_all_steps": 3
+    }
+  },
+  "truss_wall_9": {
+    "spring_model": {
+      "sequence": [
+        "AG03",
+        "AG02",
+        "AG04",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG05",
+        "AG01",
+        "AG09"
+      ],
+      "steps": 9,
+      "exact": 0,
+      "near": 2,
+      "tie_break_used": 0
+    },
+    "uniform_springs": {
+      "sequence": [
+        "AG05",
+        "AG04",
+        "AG06",
+        "AG02",
+        "AG01",
+        "AG07",
+        "AG03",
+        "AG09",
+        "AG08"
+      ],
+      "steps": 9,
+      "exact": 2,
+      "near": 0,
+      "tie_break_used": 2,
+      "first3_set_overlap_with_model": 1,
+      "first5_set_overlap_with_model": 3,
+      "same_position_all_steps": 0
+    },
+    "link_count": {
+      "sequence": [
+        "AG03",
+        "AG05",
+        "AG07",
+        "AG01",
+        "AG09",
+        "AG02",
+        "AG04",
+        "AG06",
+        "AG08"
+      ],
+      "steps": 9,
+      "exact": 3,
+      "near": 0,
+      "tie_break_used": 3,
+      "first3_set_overlap_with_model": 1,
+      "first5_set_overlap_with_model": 2,
+      "same_position_all_steps": 1
+    }
+  },
+  "central_cluster_10": {
+    "spring_model": {
+      "sequence": [
+        "AL21",
+        "AL22",
+        "AL23",
+        "AL19",
+        "AL20",
+        "AL24",
+        "AG05",
+        "AG14",
+        "AL17",
+        "AL18"
+      ],
+      "steps": 10,
+      "exact": 0,
+      "near": 5,
+      "tie_break_used": 0
+    },
+    "uniform_springs": {
+      "sequence": [
+        "AL17",
+        "AL18",
+        "AL22",
+        "AL23",
+        "AL24",
+        "AL20",
+        "AG05",
+        "AL21",
+        "AG14",
+        "AL19"
+      ],
+      "steps": 10,
+      "exact": 1,
+      "near": 2,
+      "tie_break_used": 1,
+      "first3_set_overlap_with_model": 1,
+      "first5_set_overlap_with_model": 2,
+      "same_position_all_steps": 1
+    },
+    "link_count": {
+      "sequence": [
+        "AG05",
+        "AG14",
+        "AL17",
+        "AL21",
+        "AL18",
+        "AL22",
+        "AL19",
+        "AL20",
+        "AL23",
+        "AL24"
+      ],
+      "steps": 10,
+      "exact": 5,
+      "near": 0,
+      "tie_break_used": 5,
+      "first3_set_overlap_with_model": 0,
+      "first5_set_overlap_with_model": 1,
+      "same_position_all_steps": 0
+    }
+  },
+  "distributed_10_seed_1": {
+    "spring_model": {
+      "sequence": [
+        "AL32",
+        "AL01",
+        "AG08",
+        "AL08",
+        "AL28",
+        "AL21",
+        "AG02",
+        "AG15",
+        "AL36",
+        "AL06"
+      ],
+      "steps": 10,
+      "exact": 0,
+      "near": 2,
+      "tie_break_used": 0
+    },
+    "uniform_springs": {
+      "sequence": [
+        "AL32",
+        "AL01",
+        "AG15",
+        "AG08",
+        "AG02",
+        "AL28",
+        "AL06",
+        "AL36",
+        "AL08",
+        "AL21"
+      ],
+      "steps": 10,
+      "exact": 0,
+      "near": 4,
+      "tie_break_used": 0,
+      "first3_set_overlap_with_model": 2,
+      "first5_set_overlap_with_model": 3,
+      "same_position_all_steps": 2
+    },
+    "link_count": {
+      "sequence": [
+        "AG15",
+        "AL06",
+        "AL08",
+        "AL21",
+        "AG02",
+        "AG08",
+        "AL28",
+        "AL32",
+        "AL36",
+        "AL01"
+      ],
+      "steps": 10,
+      "exact": 6,
+      "near": 0,
+      "tie_break_used": 6,
+      "first3_set_overlap_with_model": 0,
+      "first5_set_overlap_with_model": 1,
+      "same_position_all_steps": 1
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "hbta_topology_minimum_sensor_placement_v1",
+  "prepared_spectra": "../../data/derived/hbta/edge_spectra_multicondition_10s.npz",
+  "teacher_state": "../../data/derived/hbta/hbta_teacher_edge_state.npz",
+  "source_repo": "../../src",
+  "output_dir": "outputs/placement",
+  "rolling_blocks": 6,
+  "fit_recording_ids": [
+    0,
+    1,
+    2
+  ],
+  "validation_recording_id": 3,
+  "calibration_recording_id": 4,
+  "healthy_test_recording_id": 5,
+  "damage_start_recording_id": 6,
+  "budgets": [
+    50,
+    40,
+    30,
+    25,
+    20,
+    15
+  ],
+  "random_seeds": [
+    11,
+    19,
+    29,
+    37,
+    43
+  ],
+  "topology_weight": 0.05,
+  "kernel_length_m": 3.5,
+  "top_frequency_count": 8,
+  "threshold_quantile": 0.95,
+  "success_auroc_drop": 0.02,
+  "success_fpr_max": 0.05,
+  "missing_sensor_trials": 5
+}

@@ -1,0 +1,109 @@
+{
+  "description": "Accepted R1 link-level results (Section 5.1, revised). Generated 2026-11-05 from make_r1_link_level_all_states.py with configs/r1_damage_mapping.json.",
+  "states": {
+    "DS1": {
+      "spearman_rho": 0.42968425409395233,
+      "location_rank_of_122": 3,
+      "spearman_ci95": [
+        0.25747268163696996,
+        0.5757700499747974
+      ]
+    },
+    "DS1/both_south_rows": {
+      "spearman_rho": 0.4268418091764575,
+      "location_rank_of_122": 4
+    },
+    "DS2": {
+      "spearman_rho": 0.5650811197971124,
+      "location_rank_of_122": 3,
+      "spearman_ci95": [
+        0.42753614467985396,
+        0.6722182862369012
+      ]
+    },
+    "DS2/both_rows_both_stringers": {
+      "spearman_rho": 0.5697198241884398,
+      "location_rank_of_122": 3
+    },
+    "DS3": {
+      "spearman_rho": 0.2302260617233338,
+      "location_rank_of_122": 7,
+      "spearman_ci95": [
+        0.038394360174886615,
+        0.4175614974834269
+      ]
+    },
+    "DS3/one_panel_west": {
+      "spearman_rho": 0.1914857731287122,
+      "location_rank_of_122": 14
+    },
+    "DS3/one_panel_east": {
+      "spearman_rho": 0.24849435939532347,
+      "location_rank_of_122": 4
+    },
+    "DS4": {
+      "spearman_rho": 0.23756096876251012,
+      "location_rank_of_122": 8,
+      "spearman_ci95": [
+        0.031437348526915286,
+        0.41657562978227825
+      ]
+    },
+    "DS4/shifted_west": {
+      "spearman_rho": 0.21604095486999444,
+      "location_rank_of_122": 12
+    },
+    "DS5": {
+      "spearman_rho": -0.01740167119362044,
+      "location_rank_of_122": 65,
+      "spearman_ci95": [
+        -0.18695077501356108,
+        0.15675050396743426
+      ]
+    },
+    "DS5/one_diagonal_only_a": {
+      "spearman_rho": -0.07720697767987705,
+      "location_rank_of_122": 79
+    },
+    "DS5/one_diagonal_only_b": {
+      "spearman_rho": 0.057519726463011005,
+      "location_rank_of_122": 56
+    },
+    "DS6": {
+      "spearman_rho": -0.03875972338605495,
+      "location_rank_of_122": 80,
+      "spearman_ci95": [
+        -0.205884664728737,
+        0.13280084408011703
+      ]
+    },
+    "DS6/one_diagonal_only_a": {
+      "spearman_rho": 0.06750655307028683,
+      "location_rank_of_122": 50
+    },
+    "DS6/one_diagonal_only_b": {
+      "spearman_rho": -0.15317427951874463,
+      "location_rank_of_122": 107
+    },
+    "DS7": {
+      "spearman_rho": -0.0403665604934258,
+      "location_rank_of_122": 71,
+      "spearman_ci95": [
+        -0.20620174299217814,
+        0.12228951520204294
+      ]
+    },
+    "DS8": {
+      "spearman_rho": 0.38672636695758966,
+      "location_rank_of_122": 20,
+      "spearman_ci95": [
+        0.20811393775438727,
+        0.5443482767959417
+      ]
+    },
+    "DS8/one_panel_west": {
+      "spearman_rho": 0.3709165257205605,
+      "location_rank_of_122": 21
+    }
+  }
+}

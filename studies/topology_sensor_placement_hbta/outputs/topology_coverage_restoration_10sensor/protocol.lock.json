@@ -1,0 +1,1614 @@
+{
+  "experiment": "outage-conditioned topology-coverage restoration",
+  "selection_is_blind_to_physical_damage_recordings": true,
+  "selection_inputs": {
+    "sensor_metadata": "sensor names and coordinates only",
+    "sensitivity_bank": "outputs\\virtual_damage_pareto\\virtual_damage_sensitivity.npz",
+    "sensitivity_bank_sha256": "4da3f4cfa6d10732784fcdea5a2a557365334c2b9cef638c12cf661bd02f59e0",
+    "virtual_damage_config_sha256": "e81952f3fa3d7c648721834d6be8be18f3b9e1e099ddc822bba1ff7a7941a362",
+    "candidate_damage_location_count": 122,
+    "measurement_edge_count": 122,
+    "damage_weight_reductions": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "resolvent_alpha_factors": [
+      0.01,
+      0.03,
+      0.1
+    ]
+  },
+  "utility": {
+    "name": "lower-tail topology coverage",
+    "definition": "mean of the lowest-covered ceil(qD) candidate damage locations; coverage at a location is the sum of normalized sensitivities over measurement edges whose two endpoint sensors are active",
+    "tail_fraction": 0.1,
+    "tail_count": 13,
+    "greedy_tie_breaks": [
+      "mean coverage gain",
+      "lowest sensor index"
+    ],
+    "monotonicity": "adding a sensor cannot remove an active measurement edge, so every location coverage and the lower-tail mean are nondecreasing"
+  },
+  "outage_cases": {
+    "deck_row_10": "ten AL sensors on one longitudinal deck row unavailable",
+    "truss_wall_9": "nine AG sensors on one truss wall unavailable",
+    "central_cluster_10": "ten sensors in the two central deck columns and adjacent truss locations unavailable",
+    "distributed_10_seed_1": "ten unavailable sensors sampled without replacement, seed 1"
+  },
+  "sensor_names": [
+    "AG01",
+    "AG02",
+    "AG03",
+    "AG04",
+    "AG05",
+    "AG06",
+    "AG07",
+    "AG08",
+    "AG09",
+    "AG10",
+    "AG11",
+    "AG12",
+    "AG13",
+    "AG14",
+    "AG15",
+    "AG16",
+    "AG17",
+    "AG18",
+    "AL01",
+    "AL02",
+    "AL03",
+    "AL04",
+    "AL05",
+    "AL06",
+    "AL07",
+    "AL08",
+    "AL09",
+    "AL10",
+    "AL11",
+    "AL12",
+    "AL13",
+    "AL14",
+    "AL15",
+    "AL16",
+    "AL17",
+    "AL18",
+    "AL19",
+    "AL20",
+    "AL21",
+    "AL22",
+    "AL23",
+    "AL24",
+    "AL25",
+    "AL26",
+    "AL27",
+    "AL28",
+    "AL29",
+    "AL30",
+    "AL31",
+    "AL32",
+    "AL33",
+    "AL34",
+    "AL35",
+    "AL36",
+    "AL37",
+    "AL38",
+    "AL39",
+    "AL40"
+  ],
+  "sensor_positions": [
+    [
+      -14.0,
+      2.25,
+      0.6000000238418579
+    ],
+    [
+      -10.5,
+      2.25,
+      4.099999904632568
+    ],
+    [
+      -7.0,
+      2.25,
+      0.6000000238418579
+    ],
+    [
+      -3.5,
+      2.25,
+      4.900000095367432
+    ],
+    [
+      0.0,
+      2.25,
+      0.6000000238418579
+    ],
+    [
+      3.5,
+      2.25,
+      4.900000095367432
+    ],
+    [
+      7.0,
+      2.25,
+      0.6000000238418579
+    ],
+    [
+      10.5,
+      2.25,
+      4.099999904632568
+    ],
+    [
+      14.0,
+      2.25,
+      0.6000000238418579
+    ],
+    [
+      -14.0,
+      -2.25,
+      3.4000000953674316
+    ],
+    [
+      -10.5,
+      -2.25,
+      0.6000000238418579
+    ],
+    [
+      -7.0,
+      -2.25,
+      4.599999904632568
+    ],
+    [
+      -3.5,
+      -2.25,
+      0.6000000238418579
+    ],
+    [
+      0.0,
+      -2.25,
+      5.0
+    ],
+    [
+      3.5,
+      -2.25,
+      0.6000000238418579
+    ],
+    [
+      7.0,
+      -2.25,
+      4.599999904632568
+    ],
+    [
+      10.5,
+      -2.25,
+      0.6000000238418579
+    ],
+    [
+      14.0,
+      -2.25,
+      3.4000000953674316
+    ],
+    [
+      -15.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -15.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -15.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -15.75,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -12.25,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -12.25,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -12.25,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -12.25,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -8.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -8.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -8.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -8.75,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -5.25,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -5.25,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -5.25,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -5.25,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -1.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      -1.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -1.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      -1.75,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      1.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      1.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      1.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      1.75,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      5.25,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      5.25,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      5.25,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      5.25,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      8.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      8.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      8.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      8.75,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      12.25,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      12.25,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      12.25,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      12.25,
+      0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      15.75,
+      -0.949999988079071,
+      0.1899999976158142
+    ],
+    [
+      15.75,
+      -0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      15.75,
+      0.550000011920929,
+      0.1899999976158142
+    ],
+    [
+      15.75,
+      0.949999988079071,
+      0.1899999976158142
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      21
+    ],
+    [
+      0,
+      25
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      2,
+      29
+    ],
+    [
+      2,
+      33
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      4,
+      14
+    ],
+    [
+      4,
+      37
+    ],
+    [
+      4,
+      41
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      6,
+      16
+    ],
+    [
+      6,
+      45
+    ],
+    [
+      6,
+      49
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      8,
+      16
+    ],
+    [
+      8,
+      53
+    ],
+    [
+      8,
+      57
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      10,
+      22
+    ],
+    [
+      10,
+      26
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      12,
+      30
+    ],
+    [
+      12,
+      34
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      16
+    ],
+    [
+      14,
+      38
+    ],
+    [
+      14,
+      42
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      15,
+      17
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      16,
+      46
+    ],
+    [
+      16,
+      50
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      18,
+      22
+    ],
+    [
+      19,
+      20
+    ],
+    [
+      19,
+      23
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      20,
+      24
+    ],
+    [
+      21,
+      25
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      22,
+      26
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      23,
+      27
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      24,
+      28
+    ],
+    [
+      25,
+      29
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      26,
+      30
+    ],
+    [
+      27,
+      28
+    ],
+    [
+      27,
+      31
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      28,
+      32
+    ],
+    [
+      29,
+      33
+    ],
+    [
+      30,
+      31
+    ],
+    [
+      30,
+      34
+    ],
+    [
+      31,
+      32
+    ],
+    [
+      31,
+      35
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      32,
+      36
+    ],
+    [
+      33,
+      37
+    ],
+    [
+      34,
+      35
+    ],
+    [
+      34,
+      38
+    ],
+    [
+      35,
+      36
+    ],
+    [
+      35,
+      39
+    ],
+    [
+      36,
+      37
+    ],
+    [
+      36,
+      40
+    ],
+    [
+      37,
+      41
+    ],
+    [
+      38,
+      39
+    ],
+    [
+      38,
+      42
+    ],
+    [
+      39,
+      40
+    ],
+    [
+      39,
+      43
+    ],
+    [
+      40,
+      41
+    ],
+    [
+      40,
+      44
+    ],
+    [
+      41,
+      45
+    ],
+    [
+      42,
+      43
+    ],
+    [
+      42,
+      46
+    ],
+    [
+      43,
+      44
+    ],
+    [
+      43,
+      47
+    ],
+    [
+      44,
+      45
+    ],
+    [
+      44,
+      48
+    ],
+    [
+      45,
+      49
+    ],
+    [
+      46,
+      47
+    ],
+    [
+      46,
+      50
+    ],
+    [
+      47,
+      48
+    ],
+    [
+      47,
+      51
+    ],
+    [
+      48,
+      49
+    ],
+    [
+      48,
+      52
+    ],
+    [
+      49,
+      53
+    ],
+    [
+      50,
+      51
+    ],
+    [
+      50,
+      54
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      51,
+      55
+    ],
+    [
+      52,
+      53
+    ],
+    [
+      52,
+      56
+    ],
+    [
+      53,
+      57
+    ],
+    [
+      54,
+      55
+    ],
+    [
+      55,
+      56
+    ],
+    [
+      56,
+      57
+    ]
+  ],
+  "cases": [
+    {
+      "case_name": "deck_row_10",
+      "initial_outage_sensor_indices": [
+        18,
+        22,
+        26,
+        30,
+        34,
+        38,
+        42,
+        46,
+        50,
+        54
+      ],
+      "initial_outage_sensor_names": [
+        "AL01",
+        "AL05",
+        "AL09",
+        "AL13",
+        "AL17",
+        "AL21",
+        "AL25",
+        "AL29",
+        "AL33",
+        "AL37"
+      ],
+      "initial_active_sensor_count": 48,
+      "initial_coverage": {
+        "lower_tail_mean": 0.06906941104787474,
+        "mean": 0.7756765747386699,
+        "minimum": 0.04562768748965107,
+        "median": 0.9735533951487253,
+        "active_edge_count": 95
+      },
+      "restoration_steps": [
+        {
+          "step": 1,
+          "restored_sensor_index": 26,
+          "restored_sensor_name": "AL09",
+          "lower_tail_gain": 0.015541893533362591,
+          "mean_gain": 0.017606031887428375,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.08461130458123733,
+            "mean": 0.7932826066260983,
+            "minimum": 0.05444734004697693,
+            "median": 0.9745314942215729,
+            "active_edge_count": 97
+          }
+        },
+        {
+          "step": 2,
+          "restored_sensor_index": 46,
+          "restored_sensor_name": "AL29",
+          "lower_tail_gain": 0.024855085405028385,
+          "mean_gain": 0.01669222195655551,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.10946638998626572,
+            "mean": 0.8099748285826538,
+            "minimum": 0.054498152991186544,
+            "median": 0.9796284037085992,
+            "active_edge_count": 99
+          }
+        },
+        {
+          "step": 3,
+          "restored_sensor_index": 38,
+          "restored_sensor_name": "AL21",
+          "lower_tail_gain": 0.04234002605249092,
+          "mean_gain": 0.016434336323959076,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.15180641603875664,
+            "mean": 0.8264091649066129,
+            "minimum": 0.06080997654692055,
+            "median": 0.9824743560683333,
+            "active_edge_count": 101
+          }
+        },
+        {
+          "step": 4,
+          "restored_sensor_index": 30,
+          "restored_sensor_name": "AL13",
+          "lower_tail_gain": 0.0410027905653812,
+          "mean_gain": 0.0264890439483364,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.19280920660413783,
+            "mean": 0.8528982088549493,
+            "minimum": 0.11539247203673808,
+            "median": 0.984834049155733,
+            "active_edge_count": 104
+          }
+        },
+        {
+          "step": 5,
+          "restored_sensor_index": 42,
+          "restored_sensor_name": "AL25",
+          "lower_tail_gain": 0.03912083096727023,
+          "mean_gain": 0.03540336316839143,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.23193003757140807,
+            "mean": 0.8883015720233407,
+            "minimum": 0.11546958479978953,
+            "median": 0.991365939093748,
+            "active_edge_count": 108
+          }
+        },
+        {
+          "step": 6,
+          "restored_sensor_index": 34,
+          "restored_sensor_name": "AL17",
+          "lower_tail_gain": 0.12427118727165454,
+          "mean_gain": 0.03205687296955073,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.3562012248430626,
+            "mean": 0.9203584449928914,
+            "minimum": 0.11616372764623106,
+            "median": 0.9980528736957837,
+            "active_edge_count": 112
+          }
+        },
+        {
+          "step": 7,
+          "restored_sensor_index": 22,
+          "restored_sensor_name": "AL05",
+          "lower_tail_gain": 0.1742804059054538,
+          "mean_gain": 0.025977852251698574,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.5304816307485164,
+            "mean": 0.94633629724459,
+            "minimum": 0.1482408651789382,
+            "median": 0.9992353263484864,
+            "active_edge_count": 115
+          }
+        },
+        {
+          "step": 8,
+          "restored_sensor_index": 50,
+          "restored_sensor_name": "AL33",
+          "lower_tail_gain": 0.18929782286787733,
+          "mean_gain": 0.023117945452017397,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.7197794536163937,
+            "mean": 0.9694542426966074,
+            "minimum": 0.18055311927196804,
+            "median": 0.9999092940164749,
+            "active_edge_count": 118
+          }
+        },
+        {
+          "step": 9,
+          "restored_sensor_index": 18,
+          "restored_sensor_name": "AL01",
+          "lower_tail_gain": 0.14322284436532917,
+          "mean_gain": 0.015885125894453123,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.8630022979817229,
+            "mean": 0.9853393685910605,
+            "minimum": 0.2043903559352415,
+            "median": 0.9999877863186839,
+            "active_edge_count": 120
+          }
+        },
+        {
+          "step": 10,
+          "restored_sensor_index": 54,
+          "restored_sensor_name": "AL37",
+          "lower_tail_gain": 0.13699768028765968,
+          "mean_gain": 0.014660630584524492,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.9999999782693826,
+            "mean": 0.999999999175585,
+            "minimum": 0.9999999687303824,
+            "median": 0.999999999206851,
+            "active_edge_count": 122
+          }
+        }
+      ]
+    },
+    {
+      "case_name": "truss_wall_9",
+      "initial_outage_sensor_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "initial_outage_sensor_names": [
+        "AG01",
+        "AG02",
+        "AG03",
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG09"
+      ],
+      "initial_active_sensor_count": 49,
+      "initial_coverage": {
+        "lower_tail_mean": 0.04211688315925951,
+        "mean": 0.7617891279776778,
+        "minimum": 0.010706933772090643,
+        "median": 0.9684128531256633,
+        "active_edge_count": 89
+      },
+      "restoration_steps": [
+        {
+          "step": 1,
+          "restored_sensor_index": 2,
+          "restored_sensor_name": "AG03",
+          "lower_tail_gain": 0.010940261289368806,
+          "mean_gain": 0.027318207838510578,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.053057144448628316,
+            "mean": 0.7891073358161884,
+            "minimum": 0.013917422906053911,
+            "median": 0.979072261371503,
+            "active_edge_count": 93
+          }
+        },
+        {
+          "step": 2,
+          "restored_sensor_index": 1,
+          "restored_sensor_name": "AG02",
+          "lower_tail_gain": 0.04936406198006171,
+          "mean_gain": 0.009454235996167348,
+          "active_edges_added": 1,
+          "coverage": {
+            "lower_tail_mean": 0.10242120642869003,
+            "mean": 0.7985615718123558,
+            "minimum": 0.014098478199123132,
+            "median": 0.9791097118126442,
+            "active_edge_count": 94
+          }
+        },
+        {
+          "step": 3,
+          "restored_sensor_index": 3,
+          "restored_sensor_name": "AG04",
+          "lower_tail_gain": 0.05477201549373713,
+          "mean_gain": 0.017385256177749553,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.15719322192242716,
+            "mean": 0.8159468279901053,
+            "minimum": 0.01563889190754919,
+            "median": 0.9801558599412274,
+            "active_edge_count": 96
+          }
+        },
+        {
+          "step": 4,
+          "restored_sensor_index": 5,
+          "restored_sensor_name": "AG06",
+          "lower_tail_gain": 0.04929193200414461,
+          "mean_gain": 0.009348164214835641,
+          "active_edges_added": 1,
+          "coverage": {
+            "lower_tail_mean": 0.20648515392657177,
+            "mean": 0.825294992204941,
+            "minimum": 0.022947989704227734,
+            "median": 0.9810907056727629,
+            "active_edge_count": 97
+          }
+        },
+        {
+          "step": 5,
+          "restored_sensor_index": 6,
+          "restored_sensor_name": "AG07",
+          "lower_tail_gain": 0.09499045583232937,
+          "mean_gain": 0.03243104898582938,
+          "active_edges_added": 5,
+          "coverage": {
+            "lower_tail_mean": 0.30147560975890114,
+            "mean": 0.8577260411907703,
+            "minimum": 0.07728202740649248,
+            "median": 0.9866871411368161,
+            "active_edge_count": 102
+          }
+        },
+        {
+          "step": 6,
+          "restored_sensor_index": 7,
+          "restored_sensor_name": "AG08",
+          "lower_tail_gain": 0.09571143037067498,
+          "mean_gain": 0.018872742858261904,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.3971870401295761,
+            "mean": 0.8765987840490322,
+            "minimum": 0.27562426825301856,
+            "median": 0.9871300293019571,
+            "active_edge_count": 104
+          }
+        },
+        {
+          "step": 7,
+          "restored_sensor_index": 4,
+          "restored_sensor_name": "AG05",
+          "lower_tail_gain": 0.08780916334740407,
+          "mean_gain": 0.0552086388440538,
+          "active_edges_added": 8,
+          "coverage": {
+            "lower_tail_mean": 0.4849962034769802,
+            "mean": 0.931807422893086,
+            "minimum": 0.2824439766915887,
+            "median": 0.9966619955306824,
+            "active_edge_count": 112
+          }
+        },
+        {
+          "step": 8,
+          "restored_sensor_index": 0,
+          "restored_sensor_name": "AG01",
+          "lower_tail_gain": 0.2133306909105725,
+          "mean_gain": 0.03411056250730726,
+          "active_edges_added": 5,
+          "coverage": {
+            "lower_tail_mean": 0.6983268943875527,
+            "mean": 0.9659179854003933,
+            "minimum": 0.3337700028199393,
+            "median": 0.9997300633001736,
+            "active_edge_count": 117
+          }
+        },
+        {
+          "step": 9,
+          "restored_sensor_index": 8,
+          "restored_sensor_name": "AG09",
+          "lower_tail_gain": 0.3016730838818299,
+          "mean_gain": 0.03408201377519171,
+          "active_edges_added": 5,
+          "coverage": {
+            "lower_tail_mean": 0.9999999782693826,
+            "mean": 0.999999999175585,
+            "minimum": 0.9999999687303824,
+            "median": 0.999999999206851,
+            "active_edge_count": 122
+          }
+        }
+      ]
+    },
+    {
+      "case_name": "central_cluster_10",
+      "initial_outage_sensor_indices": [
+        4,
+        13,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "initial_outage_sensor_names": [
+        "AG05",
+        "AG14",
+        "AL17",
+        "AL18",
+        "AL19",
+        "AL20",
+        "AL21",
+        "AL22",
+        "AL23",
+        "AL24"
+      ],
+      "initial_active_sensor_count": 48,
+      "initial_coverage": {
+        "lower_tail_mean": 0.04541388630047661,
+        "mean": 0.7466209661497802,
+        "minimum": 0.029626085223441123,
+        "median": 0.9404369914325865,
+        "active_edge_count": 90
+      },
+      "restoration_steps": [
+        {
+          "step": 1,
+          "restored_sensor_index": 38,
+          "restored_sensor_name": "AL21",
+          "lower_tail_gain": 0.02447128713740431,
+          "mean_gain": 0.01592265011410776,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.06988517343788092,
+            "mean": 0.762543616263888,
+            "minimum": 0.029660403372105293,
+            "median": 0.9427570532827882,
+            "active_edge_count": 92
+          }
+        },
+        {
+          "step": 2,
+          "restored_sensor_index": 39,
+          "restored_sensor_name": "AL22",
+          "lower_tail_gain": 0.0319260143981365,
+          "mean_gain": 0.01923412800108748,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.10181118783601742,
+            "mean": 0.7817777442649755,
+            "minimum": 0.03013351406676179,
+            "median": 0.9480143881981444,
+            "active_edge_count": 94
+          }
+        },
+        {
+          "step": 3,
+          "restored_sensor_index": 40,
+          "restored_sensor_name": "AL23",
+          "lower_tail_gain": 0.040928491087381086,
+          "mean_gain": 0.01736988901065295,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.1427396789233985,
+            "mean": 0.7991476332756284,
+            "minimum": 0.037955083169578074,
+            "median": 0.9656786628800071,
+            "active_edge_count": 96
+          }
+        },
+        {
+          "step": 4,
+          "restored_sensor_index": 36,
+          "restored_sensor_name": "AL19",
+          "lower_tail_gain": 0.05079456127120363,
+          "mean_gain": 0.01542440022410263,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.19353424019460214,
+            "mean": 0.8145720334997311,
+            "minimum": 0.06765796277446157,
+            "median": 0.9696656869829592,
+            "active_edge_count": 98
+          }
+        },
+        {
+          "step": 5,
+          "restored_sensor_index": 37,
+          "restored_sensor_name": "AL20",
+          "lower_tail_gain": 0.04545804672302245,
+          "mean_gain": 0.01715527687713192,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.23899228691762459,
+            "mean": 0.831727310376863,
+            "minimum": 0.08449002884347578,
+            "median": 0.9782908487300475,
+            "active_edge_count": 100
+          }
+        },
+        {
+          "step": 6,
+          "restored_sensor_index": 41,
+          "restored_sensor_name": "AL24",
+          "lower_tail_gain": 0.0426526495089769,
+          "mean_gain": 0.026683291354373306,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.2816449364266015,
+            "mean": 0.8584106017312363,
+            "minimum": 0.08736546184130134,
+            "median": 0.9851181126271094,
+            "active_edge_count": 103
+          }
+        },
+        {
+          "step": 7,
+          "restored_sensor_index": 4,
+          "restored_sensor_name": "AG05",
+          "lower_tail_gain": 0.07284900296873076,
+          "mean_gain": 0.05520863884405358,
+          "active_edges_added": 8,
+          "coverage": {
+            "lower_tail_mean": 0.35449393939533225,
+            "mean": 0.9136192405752899,
+            "minimum": 0.09122494013038818,
+            "median": 0.9956680164070405,
+            "active_edge_count": 111
+          }
+        },
+        {
+          "step": 8,
+          "restored_sensor_index": 13,
+          "restored_sensor_name": "AG14",
+          "lower_tail_gain": 0.19158278275370266,
+          "mean_gain": 0.031701777901324,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.5460767221490349,
+            "mean": 0.9453210184766139,
+            "minimum": 0.09176288427491386,
+            "median": 0.9989762656706596,
+            "active_edge_count": 115
+          }
+        },
+        {
+          "step": 9,
+          "restored_sensor_index": 34,
+          "restored_sensor_name": "AL17",
+          "lower_tail_gain": 0.18091207535743536,
+          "mean_gain": 0.02278075330146001,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.7269887975064703,
+            "mean": 0.9681017717780739,
+            "minimum": 0.23715527238030631,
+            "median": 0.9993834216289494,
+            "active_edge_count": 118
+          }
+        },
+        {
+          "step": 10,
+          "restored_sensor_index": 35,
+          "restored_sensor_name": "AL18",
+          "lower_tail_gain": 0.2730111807629123,
+          "mean_gain": 0.031898227397511136,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.9999999782693826,
+            "mean": 0.999999999175585,
+            "minimum": 0.9999999687303824,
+            "median": 0.999999999206851,
+            "active_edge_count": 122
+          }
+        }
+      ]
+    },
+    {
+      "case_name": "distributed_10_seed_1",
+      "initial_outage_sensor_indices": [
+        1,
+        7,
+        14,
+        18,
+        23,
+        25,
+        38,
+        45,
+        49,
+        53
+      ],
+      "initial_outage_sensor_names": [
+        "AG02",
+        "AG08",
+        "AG15",
+        "AL01",
+        "AL06",
+        "AL08",
+        "AL21",
+        "AL28",
+        "AL32",
+        "AL36"
+      ],
+      "initial_active_sensor_count": 48,
+      "initial_coverage": {
+        "lower_tail_mean": 0.11511263565793985,
+        "mean": 0.6871943234044896,
+        "minimum": 0.0538328408234392,
+        "median": 0.8477770518880352,
+        "active_edge_count": 85
+      },
+      "restoration_steps": [
+        {
+          "step": 1,
+          "restored_sensor_index": 49,
+          "restored_sensor_name": "AL32",
+          "lower_tail_gain": 0.035042954322916695,
+          "mean_gain": 0.017380067775613295,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.15015558998085654,
+            "mean": 0.7045743911801029,
+            "minimum": 0.07322953771361695,
+            "median": 0.8707747574741314,
+            "active_edge_count": 87
+          }
+        },
+        {
+          "step": 2,
+          "restored_sensor_index": 18,
+          "restored_sensor_name": "AL01",
+          "lower_tail_gain": 0.022963964598940928,
+          "mean_gain": 0.015885125894453123,
+          "active_edges_added": 2,
+          "coverage": {
+            "lower_tail_mean": 0.17311955457979747,
+            "mean": 0.720459517074556,
+            "minimum": 0.0968430208547062,
+            "median": 0.8741449761896698,
+            "active_edge_count": 89
+          }
+        },
+        {
+          "step": 3,
+          "restored_sensor_index": 7,
+          "restored_sensor_name": "AG08",
+          "lower_tail_gain": 0.015116669674805322,
+          "mean_gain": 0.029229763097881056,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.1882362242546028,
+            "mean": 0.7496892801724371,
+            "minimum": 0.09690429664733813,
+            "median": 0.8840200602921058,
+            "active_edge_count": 92
+          }
+        },
+        {
+          "step": 4,
+          "restored_sensor_index": 25,
+          "restored_sensor_name": "AL08",
+          "lower_tail_gain": 0.027054398974841243,
+          "mean_gain": 0.03479477663369335,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.21529062322944403,
+            "mean": 0.7844840568061304,
+            "minimum": 0.09693612272424446,
+            "median": 0.8981970275846577,
+            "active_edge_count": 96
+          }
+        },
+        {
+          "step": 5,
+          "restored_sensor_index": 45,
+          "restored_sensor_name": "AL28",
+          "lower_tail_gain": 0.03458226994906968,
+          "mean_gain": 0.03435029060632311,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.24987289317851372,
+            "mean": 0.8188343474124535,
+            "minimum": 0.09892142259089098,
+            "median": 0.9331600488467373,
+            "active_edge_count": 100
+          }
+        },
+        {
+          "step": 6,
+          "restored_sensor_index": 38,
+          "restored_sensor_name": "AL21",
+          "lower_tail_gain": 0.038965604311078234,
+          "mean_gain": 0.02383433001247237,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.28883849748959195,
+            "mean": 0.8426686774249259,
+            "minimum": 0.16726296596168222,
+            "median": 0.9557920912189981,
+            "active_edge_count": 103
+          }
+        },
+        {
+          "step": 7,
+          "restored_sensor_index": 1,
+          "restored_sensor_name": "AG02",
+          "lower_tail_gain": 0.05262334536704644,
+          "mean_gain": 0.027283096892672276,
+          "active_edges_added": 3,
+          "coverage": {
+            "lower_tail_mean": 0.3414618428566384,
+            "mean": 0.8699517743175982,
+            "minimum": 0.1994394631549914,
+            "median": 0.9740555566939032,
+            "active_edge_count": 106
+          }
+        },
+        {
+          "step": 8,
+          "restored_sensor_index": 14,
+          "restored_sensor_name": "AG15",
+          "lower_tail_gain": 0.15722546997116482,
+          "mean_gain": 0.06207039264670622,
+          "active_edges_added": 8,
+          "coverage": {
+            "lower_tail_mean": 0.4986873128278032,
+            "mean": 0.9320221669643044,
+            "minimum": 0.2011667273675959,
+            "median": 0.9970123093812259,
+            "active_edge_count": 114
+          }
+        },
+        {
+          "step": 9,
+          "restored_sensor_index": 53,
+          "restored_sensor_name": "AL36",
+          "lower_tail_gain": 0.20820694806387186,
+          "mean_gain": 0.03415120454935949,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.7068942608916751,
+            "mean": 0.9661733715136639,
+            "minimum": 0.23099959854279362,
+            "median": 0.9998930073028305,
+            "active_edge_count": 118
+          }
+        },
+        {
+          "step": 10,
+          "restored_sensor_index": 23,
+          "restored_sensor_name": "AL06",
+          "lower_tail_gain": 0.2931057173777075,
+          "mean_gain": 0.03382662766192113,
+          "active_edges_added": 4,
+          "coverage": {
+            "lower_tail_mean": 0.9999999782693826,
+            "mean": 0.999999999175585,
+            "minimum": 0.9999999687303824,
+            "median": 0.999999999206851,
+            "active_edge_count": 122
+          }
+        }
+      ]
+    }
+  ]
+}

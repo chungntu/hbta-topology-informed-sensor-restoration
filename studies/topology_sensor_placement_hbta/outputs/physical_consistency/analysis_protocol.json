@@ -1,0 +1,85 @@
+{
+  "purpose": "physical consistency check of q_md, not validation of the restoration trajectory",
+  "damage_mapping": [
+    {
+      "state": "DS1",
+      "documented_intervention": "one stringer-to-floor-beam connection damaged",
+      "status": "used",
+      "candidate_links": [
+        "AL14--AL18"
+      ],
+      "basis": "The damaged uninstrumented connection lies on the drawing-derived longitudinal AL14--AL18 member path at x=-3.5 m, y=-0.55 m."
+    },
+    {
+      "state": "DS2",
+      "documented_intervention": "multiple stringer-to-floor-beam connections damaged",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The benchmark description does not identify the complete damaged connection set in graph-link names."
+    },
+    {
+      "state": "DS3",
+      "documented_intervention": "main part of one stringer cross beam removed",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "A removed cross beam spans several stringer paths, while each sensor-projected transverse link can run through either adjacent panel-end joint; no unique link mapping exists."
+    },
+    {
+      "state": "DS4",
+      "documented_intervention": "main parts of multiple stringer cross beams removed",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The intervention spans multiple cross beams and is not a single represented candidate location."
+    },
+    {
+      "state": "DS5",
+      "documented_intervention": "one lateral-bracing connection damaged",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+    },
+    {
+      "state": "DS6",
+      "documented_intervention": "one lateral-bracing connection damaged",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+    },
+    {
+      "state": "DS7",
+      "documented_intervention": "multiple lateral-bracing connections damaged",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The intervention spans multiple connections and is not a single represented candidate location."
+    },
+    {
+      "state": "DS8",
+      "documented_intervention": "one floor-beam-to-main-member connection damaged",
+      "status": "excluded",
+      "candidate_links": [],
+      "basis": "The connection is not instrumented directly; several deck-to-truss and deck-transverse sensor paths meet the region, with no documented one-to-one graph-link correspondence."
+    }
+  ],
+  "usable_state": "DS1",
+  "candidate_location": "AL14--AL18",
+  "empirical_link_response": {
+    "symbol": "R_m,s",
+    "healthy_reference_recording_ids": [
+      0,
+      1,
+      2
+    ],
+    "healthy_reference_description": "MVS_P1_UDS_SM_Z_01, MVS_P1_UDS_SM_Z_02, and MVS_P2_UDS_SM_Z_01",
+    "damage_recording": "MVS_P2_DS1_NM_Z_01",
+    "window": "six rolling 10-s blocks (60 s), 10-s step",
+    "edge_descriptors": "forward and reverse log-transfer magnitude, coherence-weighted phase cosine and sine, and magnitude-squared coherence",
+    "aggregation": "healthy-standardize every descriptor; average log1p(z^2) across the five descriptors; average the eight largest frequency-bin values; robustly standardize each edge on healthy fit windows; truncate below zero; take the median over DS1 windows",
+    "unavailable_links": "not applicable in the full-array link-level check"
+  },
+  "primary_comparison": "Spearman rank correlation across all 122 measurement links",
+  "robustness_comparison": "Kendall tau-b",
+  "uncertainty": "percentile bootstrap over links, 5000 replicates, seed 20260824",
+  "top_link_check": "top 10% by q (ceil(0.10*122)=13) versus remaining 109 links",
+  "restoration_controls": "for each fixed companion outage, choose highest, median, and lowest predicted DS1-specific coverage recovery; sensor index breaks ties",
+  "restoration_comparison": "Spearman and Kendall rank association across all 57 possible restored sensors for each fixed companion outage; measured recovery is DS1 TPR with only the companion absent minus DS1 TPR with the companion and candidate both absent"
+}

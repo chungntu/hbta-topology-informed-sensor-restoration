@@ -1,0 +1,134 @@
+{
+  "submitted_first5": {
+    "deck_row_10": [
+      "AL09",
+      "AL29",
+      "AL21",
+      "AL13",
+      "AL25"
+    ],
+    "truss_wall_9": [
+      "AG03",
+      "AG02",
+      "AG04",
+      "AG06",
+      "AG07"
+    ],
+    "central_cluster_10": [
+      "AL21",
+      "AL22",
+      "AL23",
+      "AL19",
+      "AL20"
+    ],
+    "distributed_10_seed_1": [
+      "AL32",
+      "AL01",
+      "AG08",
+      "AL08",
+      "AL28"
+    ]
+  },
+  "relative_gap_best_vs_second_submitted": {
+    "deck_row_10": [
+      0.09493394586239864,
+      0.005776174344910001,
+      0.00010313997998428817,
+      0.1526676478393135,
+      0.13804674057214575
+    ],
+    "truss_wall_9": [
+      0.08721889315329244,
+      0.1889615340675541,
+      0.5237786485406152,
+      0.04857306466779132,
+      0.22950064208400817
+    ],
+    "central_cluster_10": [
+      0.04986985459783731,
+      0.10727348616212912,
+      0.07962812572356925,
+      0.16852329890173942,
+      0.04594417209505035
+    ],
+    "distributed_10_seed_1": [
+      0.334491765487825,
+      0.10138201619054957,
+      0.12859138449905957,
+      0.2543104841588447,
+      0.13296938266136615
+    ]
+  },
+  "reliability removed": {
+    "deck_row_10": {
+      "same_position": 1,
+      "set_overlap": 3
+    },
+    "truss_wall_9": {
+      "same_position": 5,
+      "set_overlap": 5
+    },
+    "central_cluster_10": {
+      "same_position": 1,
+      "set_overlap": 3
+    },
+    "distributed_10_seed_1": {
+      "same_position": 4,
+      "set_overlap": 4
+    }
+  },
+  "uniform springs": {
+    "deck_row_10": {
+      "same_position": 1,
+      "set_overlap": 3
+    },
+    "truss_wall_9": {
+      "same_position": 0,
+      "set_overlap": 3
+    },
+    "central_cluster_10": {
+      "same_position": 0,
+      "set_overlap": 2
+    },
+    "distributed_10_seed_1": {
+      "same_position": 2,
+      "set_overlap": 3
+    }
+  },
+  "lognormal sigma=0.2": {
+    "deck_row_10": {
+      "same_position_mean": 0.85,
+      "set_overlap_mean": 3.45
+    },
+    "truss_wall_9": {
+      "same_position_mean": 2.6,
+      "set_overlap_mean": 4.1
+    },
+    "central_cluster_10": {
+      "same_position_mean": 2.05,
+      "set_overlap_mean": 3.6
+    },
+    "distributed_10_seed_1": {
+      "same_position_mean": 2.95,
+      "set_overlap_mean": 3.85
+    }
+  },
+  "lognormal sigma=0.4": {
+    "deck_row_10": {
+      "same_position_mean": 0.9,
+      "set_overlap_mean": 3.4
+    },
+    "truss_wall_9": {
+      "same_position_mean": 1.6,
+      "set_overlap_mean": 3.6
+    },
+    "central_cluster_10": {
+      "same_position_mean": 1.8,
+      "set_overlap_mean": 3.5
+    },
+    "distributed_10_seed_1": {
+      "same_position_mean": 2.3,
+      "set_overlap_mean": 3.25
+    }
+  }
+}

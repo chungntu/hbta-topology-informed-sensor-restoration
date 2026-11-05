@@ -1,0 +1,9 @@
+﻿state,documented_intervention,status,candidate_links,basis
+DS1,one stringer-to-floor-beam connection damaged,used,['AL14--AL18'],"The damaged uninstrumented connection lies on the drawing-derived longitudinal AL14--AL18 member path at x=-3.5 m, y=-0.55 m."
+DS2,multiple stringer-to-floor-beam connections damaged,excluded,[],The benchmark description does not identify the complete damaged connection set in graph-link names.
+DS3,main part of one stringer cross beam removed,excluded,[],"A removed cross beam spans several stringer paths, while each sensor-projected transverse link can run through either adjacent panel-end joint; no unique link mapping exists."
+DS4,main parts of multiple stringer cross beams removed,excluded,[],The intervention spans multiple cross beams and is not a single represented candidate location.
+DS5,one lateral-bracing connection damaged,excluded,[],"The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+DS6,one lateral-bracing connection damaged,excluded,[],"The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+DS7,multiple lateral-bracing connections damaged,excluded,[],The intervention spans multiple connections and is not a single represented candidate location.
+DS8,one floor-beam-to-main-member connection damaged,excluded,[],"The connection is not instrumented directly; several deck-to-truss and deck-transverse sensor paths meet the region, with no documented one-to-one graph-link correspondence."

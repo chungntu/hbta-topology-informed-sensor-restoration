@@ -1,0 +1,225 @@
+{
+  "protocol": {
+    "purpose": "physical consistency check of q_md, not validation of the restoration trajectory",
+    "damage_mapping": [
+      {
+        "state": "DS1",
+        "documented_intervention": "one stringer-to-floor-beam connection damaged",
+        "status": "used",
+        "candidate_links": [
+          "AL14--AL18"
+        ],
+        "basis": "The damaged uninstrumented connection lies on the drawing-derived longitudinal AL14--AL18 member path at x=-3.5 m, y=-0.55 m."
+      },
+      {
+        "state": "DS2",
+        "documented_intervention": "multiple stringer-to-floor-beam connections damaged",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The benchmark description does not identify the complete damaged connection set in graph-link names."
+      },
+      {
+        "state": "DS3",
+        "documented_intervention": "main part of one stringer cross beam removed",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "A removed cross beam spans several stringer paths, while each sensor-projected transverse link can run through either adjacent panel-end joint; no unique link mapping exists."
+      },
+      {
+        "state": "DS4",
+        "documented_intervention": "main parts of multiple stringer cross beams removed",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The intervention spans multiple cross beams and is not a single represented candidate location."
+      },
+      {
+        "state": "DS5",
+        "documented_intervention": "one lateral-bracing connection damaged",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+      },
+      {
+        "state": "DS6",
+        "documented_intervention": "one lateral-bracing connection damaged",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The damaged connection is an uninstrumented brace joint, whereas graph links represent complete sensor-to-sensor bracing paths; the documentation does not name a unique graph link."
+      },
+      {
+        "state": "DS7",
+        "documented_intervention": "multiple lateral-bracing connections damaged",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The intervention spans multiple connections and is not a single represented candidate location."
+      },
+      {
+        "state": "DS8",
+        "documented_intervention": "one floor-beam-to-main-member connection damaged",
+        "status": "excluded",
+        "candidate_links": [],
+        "basis": "The connection is not instrumented directly; several deck-to-truss and deck-transverse sensor paths meet the region, with no documented one-to-one graph-link correspondence."
+      }
+    ],
+    "usable_state": "DS1",
+    "candidate_location": "AL14--AL18",
+    "empirical_link_response": {
+      "symbol": "R_m,s",
+      "healthy_reference_recording_ids": [
+        0,
+        1,
+        2
+      ],
+      "healthy_reference_description": "MVS_P1_UDS_SM_Z_01, MVS_P1_UDS_SM_Z_02, and MVS_P2_UDS_SM_Z_01",
+      "damage_recording": "MVS_P2_DS1_NM_Z_01",
+      "window": "six rolling 10-s blocks (60 s), 10-s step",
+      "edge_descriptors": "forward and reverse log-transfer magnitude, coherence-weighted phase cosine and sine, and magnitude-squared coherence",
+      "aggregation": "healthy-standardize every descriptor; average log1p(z^2) across the five descriptors; average the eight largest frequency-bin values; robustly standardize each edge on healthy fit windows; truncate below zero; take the median over DS1 windows",
+      "unavailable_links": "not applicable in the full-array link-level check"
+    },
+    "primary_comparison": "Spearman rank correlation across all 122 measurement links",
+    "robustness_comparison": "Kendall tau-b",
+    "uncertainty": "percentile bootstrap over links, 5000 replicates, seed 20260824",
+    "top_link_check": "top 10% by q (ceil(0.10*122)=13) versus remaining 109 links",
+    "restoration_controls": "for each fixed companion outage, choose highest, median, and lowest predicted DS1-specific coverage recovery; sensor index breaks ties",
+    "restoration_comparison": "Spearman and Kendall rank association across all 57 possible restored sensors for each fixed companion outage; measured recovery is DS1 TPR with only the companion absent minus DS1 TPR with the companion and candidate both absent"
+  },
+  "link_level": {
+    "state": "DS1",
+    "candidate_edge_index": 80,
+    "candidate_location": "AL14--AL18",
+    "link_count": 122,
+    "damage_window_count": 83,
+    "spearman_rho": 0.42968425409395233,
+    "spearman_p": 7.854242070380928e-07,
+    "spearman_bootstrap_95_ci": [
+      0.2606947220371836,
+      0.5759236177608179
+    ],
+    "kendall_tau_b": 0.32886503953359225,
+    "kendall_p": 1.8399137919263657e-06,
+    "top_link_check": {
+      "fraction": 0.1,
+      "top_count": 13,
+      "median_measured_response_top": 0.8620606660842896,
+      "median_measured_response_remainder": 0.0,
+      "mean_rank_measured_response_top": 22.230770111083984,
+      "cliffs_delta": 0.7205363443895554,
+      "mann_whitney_u": 1219.0,
+      "mann_whitney_one_sided_p": 1.5895010108124552e-07,
+      "top_predicted_and_top_measured_overlap": 6,
+      "hypergeometric_enrichment_p": 0.0004985794880738782
+    }
+  },
+  "restoration_consistency": {
+    "all_candidate_rank_results": [
+      {
+        "companion_outage": "AG05",
+        "candidate_sensor_count": 57,
+        "spearman_rho": 0.5258357014394791,
+        "spearman_p": 2.6628085060243124e-05,
+        "spearman_bootstrap_95_ci": [
+          0.26256349299686,
+          0.7429822114229268
+        ],
+        "kendall_tau_b": 0.4401470332325359,
+        "kendall_p": 1.1884341081552394e-05,
+        "negative_measured_recovery_count": 1,
+        "zero_measured_recovery_count": 27
+      },
+      {
+        "companion_outage": "AG07",
+        "candidate_sensor_count": 57,
+        "spearman_rho": 0.3829792101532612,
+        "spearman_p": 0.003278170875617085,
+        "spearman_bootstrap_95_ci": [
+          0.02535887362245903,
+          0.6479284984337259
+        ],
+        "kendall_tau_b": 0.31712256622872476,
+        "kendall_p": 0.0027134992501303768,
+        "negative_measured_recovery_count": 2,
+        "zero_measured_recovery_count": 46
+      }
+    ],
+    "preselected_examples": [
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG05",
+        "restored_sensor": "AG12",
+        "selection_rule": "median",
+        "activated_link_count": 4,
+        "predicted_delta_c": 0.0003886360391334165,
+        "measured_tpr_before": 0.927710843373494,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.012048192771084376
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG05",
+        "restored_sensor": "AL14",
+        "selection_rule": "focal; highest",
+        "activated_link_count": 4,
+        "predicted_delta_c": 0.6278950087726116,
+        "measured_tpr_before": 0.6144578313253012,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.32530120481927716
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG05",
+        "restored_sensor": "AL37",
+        "selection_rule": "lowest",
+        "activated_link_count": 2,
+        "predicted_delta_c": 1.1803383301867143e-06,
+        "measured_tpr_before": 0.9397590361445783,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.0
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG07",
+        "restored_sensor": "AG04",
+        "selection_rule": "median",
+        "activated_link_count": 4,
+        "predicted_delta_c": 0.0004996868083253503,
+        "measured_tpr_before": 0.9397590361445783,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.0
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG07",
+        "restored_sensor": "AL14",
+        "selection_rule": "highest",
+        "activated_link_count": 4,
+        "predicted_delta_c": 0.6278950087726116,
+        "measured_tpr_before": 0.6265060240963856,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.3132530120481928
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG07",
+        "restored_sensor": "AL15",
+        "selection_rule": "focal",
+        "activated_link_count": 4,
+        "predicted_delta_c": 0.08788172714412212,
+        "measured_tpr_before": 0.7228915662650602,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.2168674698795181
+      },
+      {
+        "damage_state": "DS1",
+        "companion_outage": "AG07",
+        "restored_sensor": "AL37",
+        "selection_rule": "lowest",
+        "activated_link_count": 2,
+        "predicted_delta_c": 1.1803383301867143e-06,
+        "measured_tpr_before": 0.9397590361445783,
+        "measured_tpr_after": 0.9397590361445783,
+        "measured_delta_tpr": 0.0
+      }
+    ]
+  }
+}

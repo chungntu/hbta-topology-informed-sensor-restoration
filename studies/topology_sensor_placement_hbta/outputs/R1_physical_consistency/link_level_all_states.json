@@ -1,0 +1,250 @@
+{
+  "mapping": "r1_damage_mapping.json",
+  "seed": 20261105,
+  "rows": [
+    {
+      "state": "DS1",
+      "variant": "primary",
+      "springs": [
+        "AL14--AL18"
+      ],
+      "component": "Stringer--floor-beam connection",
+      "detectable": true,
+      "spearman_rho": 0.42968425409395233,
+      "location_rank_of_122": 3,
+      "spearman_ci95": [
+        0.25747268163696996,
+        0.5757700499747974
+      ]
+    },
+    {
+      "state": "DS1",
+      "variant": "both_south_rows",
+      "springs": [
+        "AL13--AL17",
+        "AL14--AL18"
+      ],
+      "component": "Stringer--floor-beam connection",
+      "detectable": true,
+      "spearman_rho": 0.4268418091764575,
+      "location_rank_of_122": 4
+    },
+    {
+      "state": "DS2",
+      "variant": "primary",
+      "springs": [
+        "AL14--AL18",
+        "AL15--AL19"
+      ],
+      "component": "Stringer--floor-beam connections",
+      "detectable": true,
+      "spearman_rho": 0.5650811197971124,
+      "location_rank_of_122": 3,
+      "spearman_ci95": [
+        0.42753614467985396,
+        0.6722182862369012
+      ]
+    },
+    {
+      "state": "DS2",
+      "variant": "both_rows_both_stringers",
+      "springs": [
+        "AL13--AL17",
+        "AL14--AL18",
+        "AL15--AL19",
+        "AL16--AL20"
+      ],
+      "component": "Stringer--floor-beam connections",
+      "detectable": true,
+      "spearman_rho": 0.5697198241884398,
+      "location_rank_of_122": 3
+    },
+    {
+      "state": "DS3",
+      "variant": "primary",
+      "springs": [
+        "AL10--AL11"
+      ],
+      "component": "Stringer cross beam",
+      "detectable": true,
+      "spearman_rho": 0.2302260617233338,
+      "location_rank_of_122": 7,
+      "spearman_ci95": [
+        0.038394360174886615,
+        0.4175614974834269
+      ]
+    },
+    {
+      "state": "DS3",
+      "variant": "one_panel_west",
+      "springs": [
+        "AL06--AL07"
+      ],
+      "component": "Stringer cross beam",
+      "detectable": true,
+      "spearman_rho": 0.1914857731287122,
+      "location_rank_of_122": 14
+    },
+    {
+      "state": "DS3",
+      "variant": "one_panel_east",
+      "springs": [
+        "AL14--AL15"
+      ],
+      "component": "Stringer cross beam",
+      "detectable": true,
+      "spearman_rho": 0.24849435939532347,
+      "location_rank_of_122": 4
+    },
+    {
+      "state": "DS4",
+      "variant": "primary",
+      "springs": [
+        "AL10--AL11",
+        "AL14--AL15"
+      ],
+      "component": "Stringer cross beams",
+      "detectable": true,
+      "spearman_rho": 0.23756096876251012,
+      "location_rank_of_122": 8,
+      "spearman_ci95": [
+        0.031437348526915286,
+        0.41657562978227825
+      ]
+    },
+    {
+      "state": "DS4",
+      "variant": "shifted_west",
+      "springs": [
+        "AL06--AL07",
+        "AL10--AL11"
+      ],
+      "component": "Stringer cross beams",
+      "detectable": true,
+      "spearman_rho": 0.21604095486999444,
+      "location_rank_of_122": 12
+    },
+    {
+      "state": "DS5",
+      "variant": "primary",
+      "springs": [
+        "AG01--AG11",
+        "AG03--AG11"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": -0.01740167119362044,
+      "location_rank_of_122": 65,
+      "spearman_ci95": [
+        -0.18695077501356108,
+        0.15675050396743426
+      ]
+    },
+    {
+      "state": "DS5",
+      "variant": "one_diagonal_only_a",
+      "springs": [
+        "AG01--AG11"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": -0.07720697767987705,
+      "location_rank_of_122": 79
+    },
+    {
+      "state": "DS5",
+      "variant": "one_diagonal_only_b",
+      "springs": [
+        "AG03--AG11"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": 0.057519726463011005,
+      "location_rank_of_122": 56
+    },
+    {
+      "state": "DS6",
+      "variant": "primary",
+      "springs": [
+        "AG05--AG13",
+        "AG05--AG15"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": -0.03875972338605495,
+      "location_rank_of_122": 80,
+      "spearman_ci95": [
+        -0.205884664728737,
+        0.13280084408011703
+      ]
+    },
+    {
+      "state": "DS6",
+      "variant": "one_diagonal_only_a",
+      "springs": [
+        "AG05--AG13"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": 0.06750655307028683,
+      "location_rank_of_122": 50
+    },
+    {
+      "state": "DS6",
+      "variant": "one_diagonal_only_b",
+      "springs": [
+        "AG05--AG15"
+      ],
+      "component": "Lateral-bracing connection",
+      "detectable": false,
+      "spearman_rho": -0.15317427951874463,
+      "location_rank_of_122": 107
+    },
+    {
+      "state": "DS7",
+      "variant": "primary",
+      "springs": [
+        "AG01--AG11",
+        "AG03--AG11",
+        "AG05--AG13",
+        "AG05--AG15"
+      ],
+      "component": "Lateral-bracing connections",
+      "detectable": true,
+      "spearman_rho": -0.0403665604934258,
+      "location_rank_of_122": 71,
+      "spearman_ci95": [
+        -0.20620174299217814,
+        0.12228951520204294
+      ]
+    },
+    {
+      "state": "DS8",
+      "variant": "primary",
+      "springs": [
+        "AG15--AL21",
+        "AG15--AL25"
+      ],
+      "component": "Floor-beam--main-member connection",
+      "detectable": true,
+      "spearman_rho": 0.38672636695758966,
+      "location_rank_of_122": 20,
+      "spearman_ci95": [
+        0.20811393775438727,
+        0.5443482767959417
+      ]
+    },
+    {
+      "state": "DS8",
+      "variant": "one_panel_west",
+      "springs": [
+        "AG13--AL13",
+        "AG13--AL17"
+      ],
+      "component": "Floor-beam--main-member connection",
+      "detectable": true,
+      "spearman_rho": 0.3709165257205605,
+      "location_rank_of_122": 21
+    }
+  ]
+}
