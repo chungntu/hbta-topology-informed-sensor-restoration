@@ -150,11 +150,6 @@ def panel_b(ax, xz, links):
         pts = zigzag(top, bot, amp=0.09, coil_len=0.45)
         ax.plot(pts[:, 0], pts[:, 1], color=COLORS["grey"], lw=0.8, zorder=2)
         ground_symbol(ax, bot[0], bot[1], w=0.34)
-        ax.add_patch(FancyArrowPatch((x - 0.42, z - 0.05), (x - 0.42, z + 0.62),
-                                     arrowstyle="-|>", mutation_scale=7, color=COLORS["red"],
-                                     lw=0.9, zorder=6))
-    x2, z2 = xz["AG02"]
-    ax.text(x2 - 0.75, z2 + 0.45, r"$x_i$", color=COLORS["red"], fontsize=8.5, ha="center")
     x3, z3 = xz["AL12"]
     ax.text(x3 + 0.3, z3 - 0.55, r"$\alpha$", fontsize=8.5, color=COLORS["grey"], va="center")
     draw_nodes(ax, xz, labels=False)
